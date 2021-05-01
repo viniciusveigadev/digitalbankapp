@@ -12,6 +12,12 @@ class Introduction : AppIntro() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        isColorTransitionsEnabled = true
+        setTransformer(AppIntroPageTransformerType.Flow)
+        isVibrate = true
+        vibrateDuration = 150L
+        isWizardMode = true
+
         addSlide(
             AppIntroFragment.newInstance(
                 title = "Bem vindo(a) ao Digital Bank!",

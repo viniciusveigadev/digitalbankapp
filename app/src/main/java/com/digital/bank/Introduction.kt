@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.github.appintro.AppIntro
 import com.github.appintro.AppIntroFragment
+import com.github.appintro.AppIntroPageTransformerType
 
 class Introduction : AppIntro() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,23 +14,26 @@ class Introduction : AppIntro() {
 
         addSlide(
             AppIntroFragment.newInstance(
-                title = "Welcome...",
-                description = "This is the first slide of the example",
-                backgroundColor = Color.DKGRAY
+                title = "Bem vindo(a) ao Digital Bank!",
+                description = "Seu banco digital gratuito. 1º banco exclusivo para crianças e adolescentes",
+                backgroundColor = Color.GREEN,
+                imageDrawable = R.drawable.welcome
             )
         )
         addSlide(
             AppIntroFragment.newInstance(
-                title = "Sencond...",
-                description = "This is the second slide of the example",
-                backgroundColor = Color.GRAY
+                title = "Exclusivo",
+                description = "Disponível no celular ou no computador",
+                backgroundColor = Color.GRAY,
+                imageDrawable = R.drawable.yes
             )
         )
         addSlide(
             AppIntroFragment.newInstance(
-                title = "...Let's get started!",
-                description = "This is the last slide, I won't annoy you more :)",
-                backgroundColor = Color.BLUE
+                title = "Vamos começar",
+                description = "Todas as funções de um banco na palma da sua mão. Aproveite!",
+                backgroundColor = Color.BLUE,
+                imageDrawable = R.drawable.launch
             )
         )
     }
@@ -41,6 +45,13 @@ class Introduction : AppIntro() {
 
     override fun onDonePressed(currentFragment: Fragment?) {
         super.onDonePressed(currentFragment)
+
+        val sharedPref = this.getSharedPreferences(PREFERENCES, MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("finishButton", true)
+        editor.apply()
+        editor.commit()
+
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()

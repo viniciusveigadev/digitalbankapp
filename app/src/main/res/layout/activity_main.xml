@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ebeae8"
+    android:background="@color/grey"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#fff"
+        android:background="@color/white"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Olá, Vinícius Veiga"
-            android:textColor="#ed6f05"
+            android:textColor="@color/orange"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Agência: 3300 Conta: 007923"
-            android:textColor="#333"
+            android:textColor="@color/black_500"
             app:layout_constraintStart_toStartOf="@+id/tv_usuario"
             app:layout_constraintTop_toBottomOf="@+id/tv_usuario" />
 
@@ -44,7 +44,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:text="Nossos serviços"
-        android:textColor="#ed6f05"
+        android:textColor="@color/orange"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_toolbar" />
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="disponíveis para você"
-        android:textColor="#333"
+        android:textColor="@color/black_500"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/tv_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />

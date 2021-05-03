@@ -17,9 +17,9 @@ class CheckPreferences : AppCompatActivity() {
     private fun isIntroSliderFinished() {
         val sharedPref = this.getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE)
         val defaultValue = false
-        val isButtonDoneClicked = sharedPref.getBoolean("finishButton", defaultValue)
+        val isButtonDonePressed = sharedPref.getBoolean(getString(R.string.preferencekey_onDonePressed_intro), defaultValue)
 
-        if (isButtonDoneClicked) {
+        if (isButtonDonePressed) {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         } else {

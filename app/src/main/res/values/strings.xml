@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Digital Bank</string>
+    <string name="welcome">Olá, Vinícius Veiga</string>
+    <string name="user_data">Agência: 3300 Conta: 007923</string>
+    <string name="our_services">Nossos serviços</string>
+    <string name="our_services_2">disponíveis para você</string>
+    <string name="title_intro_1">Bem vindo(a) ao Digital Bank!</string>
+    <string name="description_intro_1">Seu banco digital gratuito. 1º banco exclusivo para crianças e adolescentes</string>
+    <string name="title_intro_2">Exclusivo</string>
+    <string name="description_intro_2">Disponível no celular ou no computador</string>
+    <string name="title_intro_3">Vamos começar</string>
+    <string name="description_intro_3">Todas as funções de um banco na palma da sua mão. Aproveite!</string>
+    <string name="preferencekey_onDonePressed_intro">isDoneButtonPressed</string>
 </resources>

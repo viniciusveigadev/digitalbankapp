@@ -20,24 +20,24 @@ class Introduction : AppIntro() {
 
         addSlide(
             AppIntroFragment.newInstance(
-                title = "Bem vindo(a) ao Digital Bank!",
-                description = "Seu banco digital gratuito. 1º banco exclusivo para crianças e adolescentes",
+                title = getString(R.string.title_intro_1),
+                description = getString(R.string.description_intro_1),
                 backgroundColor = Color.GREEN,
                 imageDrawable = R.drawable.welcome
             )
         )
         addSlide(
             AppIntroFragment.newInstance(
-                title = "Exclusivo",
-                description = "Disponível no celular ou no computador",
+                title = getString(R.string.title_intro_2),
+                description = getString(R.string.description_intro_2),
                 backgroundColor = Color.GRAY,
                 imageDrawable = R.drawable.yes
             )
         )
         addSlide(
             AppIntroFragment.newInstance(
-                title = "Vamos começar",
-                description = "Todas as funções de um banco na palma da sua mão. Aproveite!",
+                title = getString(R.string.title_intro_3),
+                description = getString(R.string.description_intro_3),
                 backgroundColor = Color.BLUE,
                 imageDrawable = R.drawable.launch
             )
@@ -54,7 +54,7 @@ class Introduction : AppIntro() {
 
         val sharedPref = this.getSharedPreferences(PREFERENCES, MODE_PRIVATE)
         val editor = sharedPref.edit()
-        editor.putBoolean("finishButton", true)
+        editor.putBoolean(getString(R.string.preferencekey_onDonePressed_intro), true)
         editor.apply()
         editor.commit()
 

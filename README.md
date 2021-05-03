@@ -3,7 +3,7 @@ Digital Bank
 </h2>
 
 <p align="center"> 
-<img src="https://github.com/viniciusveigadev/digitalbankapp/blob/main/app/src/main/res/drawable/welcome.png" width="150" heigth="150">
+<img src="https://github.com/viniciusveigadev/digitalbankapp/blob/develop/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="150" heigth="150">
 </p>
 
 <p align="center"> 
@@ -55,8 +55,8 @@ For development, the latest version of Android Studio is required. The latest ve
 
 3. Then at last paste the link in the URL and choose your Directory. Click on the Clone button and you are done.
 
-
-You can get a debug APK of the sample app [here](https.github.com) (soon...)
+You can get a debug APK of the sample app [here](https://github.com/viniciusveigadev/digitalbankapp/releases/download/v.1.0.0/app-debug.apk)
+Other releases [here](https://github.com/viniciusveigadev/digitalbankapp/releases)
 
 ## :zap: Features
 

@@ -56,6 +56,7 @@ For development, the latest version of Android Studio is required. The latest ve
 3. Then at last paste the link in the URL and choose your Directory. Click on the Clone button and you are done.
 
 You can get a debug APK of the sample app [here](https://github.com/viniciusveigadev/digitalbankapp/releases/download/v.1.0.0/app-debug.apk)
+
 Other releases [here](https://github.com/viniciusveigadev/digitalbankapp/releases)
 
 ## :zap: Features
@@ -67,15 +68,15 @@ Other releases [here](https://github.com/viniciusveigadev/digitalbankapp/release
     
 ## :link: Contributing
 
-1.Fork it!
+1. Fork it!
 
-2.Create your feature branch (git checkout -b feature/fooBar)
+2. Create your feature branch (git checkout -b feature/fooBar)
 
-3.Commit your changes (git commit -am 'feat: add some fooBar')
+3. Commit your changes (git commit -am 'feat: add some fooBar')
 
-4.Push to the branch (git push origin feature/fooBar)
+4. Push to the branch (git push origin feature/fooBar)
 
-5.Create a new Pull Request
+5. Create a new Pull Request
 
 This project is for study purposes too, so send me an email telling me what you are doing and why you are doing it, teach me what you know
 

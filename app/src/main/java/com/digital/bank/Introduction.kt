@@ -22,7 +22,7 @@ class Introduction : AppIntro() {
             AppIntroFragment.newInstance(
                 title = getString(R.string.title_intro_1),
                 description = getString(R.string.description_intro_1),
-                backgroundColor = Color.GREEN,
+                backgroundColor = Color.rgb(33, 33, 33),
                 imageDrawable = R.drawable.welcome
             )
         )
